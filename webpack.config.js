@@ -17,11 +17,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-<<<<<<< HEAD
         exclude: /node_modules/,
-=======
-        exclude: /node_modules/, // Talvez o problema seja aqui
->>>>>>> 2e3a3600564042a1d87c321f85e999ccd15b5183
         use: 'babel-loader'
       },
       {
