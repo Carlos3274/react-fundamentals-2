@@ -32,9 +32,14 @@ function App() {
   ])
 
   function handleRemovePost(postId) {
-    setPosts(prevState => prevState.map(post => post.id === postId ? { ...post, removed: true} : post))
+    setPosts(prevState =>
+      prevState.map(post =>
+        post.id === postId ? { ...post, removed: true } : post
+      )
+    )
   }
- // prevState é a lista atual de posts
+
+  // prevState é a lista atual de posts
   function handleRefresh() {
     setPosts(prevState => [
       ...prevState,

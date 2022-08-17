@@ -4,9 +4,7 @@ import PropTypes from 'prop-types'
 import styles from './Post.scss'
 function Post(props) {
   return (
-    <article
-      className={props.post.removed ? styles.postDeleted : styles.post.post}
-    >
+    <article className={props.post.removed ? styles.postDeleted : styles.post}>
       <PostHeader
         onRemove={props.onRemove}
         post={{
