@@ -1,16 +1,17 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react'
 import PropTypes, { func } from 'prop-types'
-import { ThemeContext } from './ThemeContext'
+import { ThemeContext } from '../context/ThemeContext'
 function Button(props) {
   const { theme } = useContext(ThemeContext)
   return (
     <button
-      style={{ 
+      style={{
         color: theme === 'dark' ? '#fff' : '#000',
-        background: theme === 'dark' ? '#000' : '#fff' 
-       }}
-      onClick={props.onClick}>
-       {props.children}
+        background: theme === 'dark' ? '#000' : '#fff'
+      }}
+      onClick={props.onClick}
+    >
+      {props.children}
     </button>
   )
 }
@@ -19,5 +20,5 @@ export default Button
 
 Button.PropTypes = {
   children: PropTypes.node.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired
 }

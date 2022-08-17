@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Post from './Post'
-import Header from './Header'
-import { ThemeProvider } from './ThemeContext'
+import Post from '../Post'
+import Header from '../Header'
+import { ThemeProvider } from '../../context/ThemeContext'
 
 function App() {
   const [posts, setPosts] = useState([
@@ -38,7 +38,6 @@ function App() {
       )
     )
   }
-
   // prevState é a lista atual de posts
   function handleRefresh() {
     setPosts(prevState => [
