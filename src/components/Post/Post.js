@@ -2,6 +2,8 @@ import React from 'react'
 import PostHeader from './PostHeader'
 import PropTypes from 'prop-types'
 import styles from './Post.scss'
+
+import { Subtitle, Rate } from './styles'
 function Post(props) {
   return (
     <article className={props.post.removed ? styles.postDeleted : styles.post}>
@@ -13,9 +15,8 @@ function Post(props) {
           read: props.post.read
         }}
       />
-      <br />
-      <small>{props.post.subtitle}</small>
-      Likes: {props.post.likes}
+      <Subtitle>{props.post.subtitle}</Subtitle>
+      <Rate>Likes: {props.post.likes}</Rate>
     </article>
   )
 }

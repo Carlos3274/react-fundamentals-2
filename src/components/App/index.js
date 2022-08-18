@@ -52,7 +52,7 @@ function App() {
   }
   return (
     <ThemeProvider>
-      <Header title="Zeca's Blog">Novidades de 2022</Header>
+      <Header>Novidades de 2022</Header>
       <button onClick={handleRefresh}>Atualizar</button>
       <hr />
 
