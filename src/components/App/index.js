@@ -46,7 +46,9 @@ function App() {
         id: Math.random(),
         title: `Title#0${prevState.length + 1}`,
         subtitle: 'Subtitle#01',
-        likes: 20
+        likes: 20,
+        read: false,
+        removed: false
       }
     ])
   }
